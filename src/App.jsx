@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Container sx={{ bgcolor: 'coral', height: '100vh', width: {
+      <Container sx={{ bgcolor: '#342E37', height: '100vh', width: {
           xs: '100%',  // 0px and up
           sm: '100%',   // 600px and up
           md: '100%', // 900px and up
