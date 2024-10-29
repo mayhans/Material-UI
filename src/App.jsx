@@ -9,10 +9,20 @@ const theme = createTheme({
   palette: {
     primary: {
       main: '#342E37',
-      typo: '#FAFFFD',
-      hover: '#FA824C'
-    }
-  }
+    },
+  },
+  // components: {
+  //   MuiButton: {
+  //     styleOverrides: {
+  //       root: {
+  //         '&hover': {
+  //           backgroundColor: '#FA824C', //my custom hover color
+  //         },
+  //       },
+  //     },
+  //   },
+  // },
+  // ABOVE hover effect was not working figure out later
 })
 
 function App() {
@@ -20,16 +30,10 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Container sx={{ bgcolor: 'primary.main', height: '100vh', width: {
-            xs: '100%',  // 0px and up
-            sm: '100%',   // 600px and up
-            md: '100%', // 900px and up
-            lg: '100%', // 1280px and up
-            xl: '100%', // 1920px and up
-          } , padding: 0 //had to add padding 0 on here to fix padding issue with nav bar
+        <Container sx={{ bgcolor: 'primary.main', height: '100vh', width: '100%' , padding: 0 //had to add padding 0 on here to fix padding issue with nav bar
           }}>
             <ButtonAppBar />
-          <Box sx={{ bgcolor: 'purple'}}></Box>
+          <Box sx={{ bgcolor: 'purple', height: '100px' }}></Box>
         </Container>
       </ThemeProvider>
     </>
