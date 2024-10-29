@@ -14,7 +14,7 @@ function App() {
           md: '100%', // 900px and up
           lg: '100%', // 1280px and up
           xl: '100%', // 1920px and up
-        }
+        } , padding: 0 //had to add padding 0 on here to fix padding issue with nav bar
         }}>
           <ButtonAppBar />
         <Box sx={{ bgcolor: 'purple'}}></Box>
